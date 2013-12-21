@@ -1,0 +1,16 @@
+---
+layout: page
+title: 'Archives'
+---
+<ul id="archives-list" class="list-style-none">
+{% for post in site.posts %}
+  <li>
+    <span class="grid-50 mobile-grid-50">
+        <a href="{{ post.url }}" title="{{ post.title }}">{{ post.title }}</a>
+    </span>
+    {% if post.date %}
+    <time class="grid-50 mobile-grid-50" datetime="{{ post.date | date:"%Y-%m-%d" }}">{{ post.date | date:"%Y-%m-%d" }}</time>
+    {% endif %}
+  </li>
+{% endfor %}
+</ul>

@@ -1,0 +1,16 @@
+name: 'Subfusc'
+buzz: 'A Monochromic Space'
+markdown: redcarpet
+pygments: true
+permalink: /:year/:month/:day/:title.html
+
+author: "Your name"
+base_url: "http://your.site.url/"
+
+paginate: 1
+paginate_path: "/page/:num/inex.html"
+navs:
+  - title: Archives
+    href: /archives.html
+  - title: About
+    href: /about.html

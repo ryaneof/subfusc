@@ -1,0 +1,9 @@
+    <div class="grid-100">
+        <nav class="site-nav" role="navigation">
+            <ul>
+              {% for nav in site.navs %}
+                <li class="text-center"><a href="{{ nav.href }}">{{ nav.title }}</a></li>
+              {% endfor %}
+            </ul>
+        </nav>
+    </div>

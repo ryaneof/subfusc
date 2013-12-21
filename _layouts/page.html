@@ -1,0 +1,11 @@
+---
+layout: default
+---
+<div class="grid-100 main">
+	{% if page.show_title != 'n' %}
+    <h2 class="page-title">{{ page.title }}</h2>
+    {% endif %}
+    <div class="page-content">
+    {{ content }}
+    </div>
+</div>
