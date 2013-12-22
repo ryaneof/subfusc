@@ -1,14 +1,14 @@
-name: 'Subfusc'
-buzz: 'A Monochromic Space'
-markdown: redcarpet
-pygments: true
-permalink: /:year/:month/:day/:title.html
-
 author: "Your name"
 base_url: "http://your.site.url/"
-
+buzz: 'A Monochromic Space'
+disqus_shortname: 
+markdown: redcarpet
+name: 'Subfusc'
 paginate: 1
 paginate_path: "/page/:num/inex.html"
+permalink: /:year/:month/:day/:title.html
+pygments: true
+
 navs:
   - title: Archives
     href: /archives.html
