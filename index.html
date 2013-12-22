@@ -5,31 +5,27 @@ show_title: 'n'
 ---
 
 <div id="homepage" class="grid-100">
-  	{% for post in paginator.posts %}
-  	<p class="post-meta">{{ post.date | date:"%Y-%m-%d" }}</p>
+    {% for post in paginator.posts %}
+    <p class="post-meta">{{ post.date | date:"%Y-%m-%d" }}</p>
     <h2 class="post-title">{{ post.title }}</h2>
     <div class="post-content">
     {{ post.content }}
     </div>
-  	{% endfor %}
+    {% endfor %}
 </div>
 
 <div id="pagination" class="grid-100">
-	<p>
-	  	<span class="pagination-prev grid-33 mobile-grid-33">
-	  	{% if paginator.previous_page %}
-	  		<a href="{{ paginator.previous_page_path | prepend: site.baseurl | replace: '//', '/' }}">&laquo; Prev</a>
-	  	{% endif %}
-	  	</span>
-	  	
-	  	<span class="pagination-meta grid-33 mobile-grid-33 text-center">
-	  		<strong class="weak">{{ paginator.page }} / {{ paginator.total_pages }}</strong>
-	  	</span>
-		
-		<span class="pagination-prev grid-33 mobile-grid-33 text-right">
-		{% if paginator.next_page %}
-			<a href="{{ paginator.next_page_path | prepend: site.baseurl | replace: '//', '/' }}">Next &raquo;</a>
-		{% endif %}
-		</span>
-	</p>
+    <p>
+        <span class="pagination-prev grid-50 mobile-grid-50">
+        {% if paginator.previous_page %}
+            <a href="{{ paginator.previous_page_path | prepend: site.baseurl | replace: '//', '/' }}">&laquo; Prev</a>
+        {% endif %}
+        </span>
+        
+        <span class="pagination-prev grid-50 mobile-grid-50 text-right">
+        {% if paginator.next_page %}
+            <a href="{{ paginator.next_page_path | prepend: site.baseurl | replace: '//', '/' }}">Next &raquo;</a>
+        {% endif %}
+        </span>
+    </p>
 </div>

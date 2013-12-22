@@ -100,7 +100,7 @@ strong.weak { color: #AAA; font-weight: normal; }
 .post-content img, .page-content img { display: block; max-width: 100%; margin: 0 auto; }
 .post-content ul, .page-content ul { margin: 1.6em 0; }
 .post-content ol ol, .post-content ul ul, .post-content ul ol, .post-content ol ul, .page-content ol ol, .page-content ul ul, .page-content ul ol, .page-content ol ul { margin: 0.4em 0; }
-
+.post-comment { margin-top: 3.2em; }
 .page-title { margin-top: 0.8em; color: #666; }
 
 .site-footer { margin: 4rem 0 0 0; padding: 2rem 0; font-size: 1.3rem; line-height: 1.7em; color: #AAA; }
@@ -116,3 +116,5 @@ strong.weak { color: #AAA; font-weight: normal; }
 
 #pagination { margin-top: 2em; }
 #pagination span { display: inline-block; height: 1.2em; line-height: 1.2em; }
+#pagination span a { padding: 8px 16px; border-radius: 4px; text-decoration: none; background-color: #EEE; color: #999; transition: color ease 0.3s; transition: background-color ease 0.3s; }
+#pagination span a:hover { color: #333; background-color: #DDD; }
