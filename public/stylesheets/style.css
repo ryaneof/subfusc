@@ -103,6 +103,8 @@ strong.weak { color: #AAA; font-weight: normal; }
 .post-comment { margin-top: 3.2em; }
 .page-title { margin-top: 0.8em; color: #666; }
 
+.paragraph-banner { line-height: 1em; font-weight: bold; font-size: 12rem; }
+
 .site-footer { margin: 4rem 0 0 0; padding: 2rem 0; font-size: 1.3rem; line-height: 1.7em; color: #AAA; }
 .site-footer a { color: #AAA; text-decoration: underline; }
 .site-footer a:hover { color: #666; }

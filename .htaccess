@@ -1,0 +1,4 @@
+---
+layout: nil
+---
+ErrorDocument 404 /404.html
