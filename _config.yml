@@ -1,6 +1,6 @@
 author:             "Your name"
 base_url:           "http://your.site.url"
-buzz:               "A Monochromic Space"
+buzz:               "A Monochromatic Space"
 disqus_shortname: 
 markdown:           redcarpet
 paginate:           1

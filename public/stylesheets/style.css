@@ -96,10 +96,11 @@ strong.weak { color: #AAA; font-weight: normal; }
 }
 
 .post-meta { display: inline-block; font-size: 1.5rem; margin-top: 1em; color: #AAA; text-shadow: 0 0px 1px rgba(0, 0, 0, 0.2); }
-.post-content p, .page-content p { margin: 1.2em 0; font-family: 'Droid Serif', 'Georgia'; }
+.post-content p, .page-content p { font-size: 1.6rem; margin: 1.2em 0; font-family: 'Droid Serif', 'Georgia'; }
 .post-content img, .page-content img { display: block; max-width: 100%; margin: 0 auto; }
 .post-content ul, .page-content ul { margin: 1.6em 0; }
 .post-content ol ol, .post-content ul ul, .post-content ul ol, .post-content ol ul, .page-content ol ol, .page-content ul ul, .page-content ul ol, .page-content ol ul { margin: 0.4em 0; }
+.post-content li, .page-content li { font-size: 1.6rem; }
 .post-comment { margin-top: 3.2em; }
 .page-title { margin-top: 0.8em; color: #666; }
 
