@@ -103,6 +103,7 @@ strong.weak { color: #AAA; font-weight: normal; }
 .post-content li, .page-content li { font-size: 1.6rem; }
 .post-comment { margin-top: 3.2em; }
 .page-title { margin-top: 0.8em; color: #666; }
+.post-title a { text-decoration: none; transition: color ease 0.3s; }
 
 .paragraph-banner { line-height: 1em; font-weight: bold; font-size: 12rem; }
 

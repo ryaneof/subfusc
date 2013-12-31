@@ -7,7 +7,7 @@ show_title: 'n'
 <div id="homepage" class="grid-100">
     {% for post in paginator.posts %}
     <p class="post-meta">{{ post.date | date:"%Y-%m-%d" }}</p>
-    <h2 class="post-title">{{ post.title }}</h2>
+    <h2 class="post-title"><a href="{{ post.url }}">{{ post.title }}</a></h2>
     <div class="post-content">
     {{ post.content }}
     </div>
