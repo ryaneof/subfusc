@@ -115,10 +115,14 @@ strong.weak { color: #AAA; font-weight: normal; }
  * Specific
  */
 
+
 #archives-list li { width: 100%; float: left; line-height: 2em; }
 #archives-list li time { text-align: right; color: #666; }
 
 #pagination { margin-top: 2em; }
+#pagination p { height: 2.4em; }
 #pagination span { display: inline-block; height: 1.2em; line-height: 1.2em; }
-#pagination span a { font-size: 1.6rem; padding: 8px 16px; border-radius: 4px; text-decoration: none; background-color: #EEE; color: #999; transition: color ease 0.3s; transition: background-color ease 0.3s; }
+#pagination span a { display: inline-block; max-width: 80%; font-size: 1.6rem; padding: 8px 16px; overflow: hidden; white-space: nowrap; text-overflow: ellipsis; border-radius: 4px; text-decoration: none; background-color: #EEE; color: #999; transition: color ease 0.3s; transition: background-color ease 0.3s; }
 #pagination span a:hover { color: #333; background-color: #DDD; }
+
+.post #pagination span { padding: 0; }

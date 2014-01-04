@@ -1,12 +1,30 @@
 ---
 layout: default
 ---
-<div class="grid-100 main">
+<div class="grid-100 main post">
     <p class="post-meta">{{ page.date | date:"%Y-%m-%d" }}</p>
     <h2 class="post-title">{{ page.title }}</h2>
+
     <div class="post-content">
     {{ content }}
     </div>
+    
+    <div id="pagination">
+        <p>
+            <span class="grid-50 mobile-grid-50">
+            {% if page.previous %}
+                <a href="{{ page.previous.url | prepend: site.baseurl | replace: '//', '/' }}">&laquo; {{ page.previous.title }}</a>
+            {% endif %}
+            </span>
+            
+            <span class="grid-50 mobile-grid-50 text-right">
+            {% if page.next %}
+                <a href="{{ page.next.url | prepend: site.baseurl | replace: '//', '/' }}"> {{ page.next.title }} &raquo;</a>
+            {% endif %}
+            </span>
+        </p>
+    </div>
+
     {% if page.disqus == true and site.disqus_shortname != '' %}
         {% include disqus.html %}
     {% endif %}

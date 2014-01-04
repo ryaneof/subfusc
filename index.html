@@ -16,13 +16,13 @@ show_title: 'n'
 
 <div id="pagination" class="grid-100">
     <p>
-        <span class="pagination-prev grid-50 mobile-grid-50">
+        <span class="grid-50 mobile-grid-50">
         {% if paginator.previous_page %}
             <a href="{{ paginator.previous_page_path | prepend: site.baseurl | replace: '//', '/' }}">&laquo; Prev</a>
         {% endif %}
         </span>
         
-        <span class="pagination-prev grid-50 mobile-grid-50 text-right">
+        <span class="grid-50 mobile-grid-50 text-right">
         {% if paginator.next_page %}
             <a href="{{ paginator.next_page_path | prepend: site.baseurl | replace: '//', '/' }}">Next &raquo;</a>
         {% endif %}
