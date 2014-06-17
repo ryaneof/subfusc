@@ -6,7 +6,7 @@ markdown:           redcarpet
 paginate:           1
 paginate_path:      /page/:num/index.html
 permalink:          /:year/:month/:day/:title.html
-pygments:           true
+highlighter:        pygments
 site_name:          "Subfusc"
 
 navs:
