@@ -5,7 +5,7 @@ Just fork it if you are interested : )
 
 ### Screenshot
 
-![Screenshot of Subfusc](http://cl.ly/image/1r3A2e0k1z0C/download/Image%202014-05-26%20at%209.33.28%20PM.png)
+![Screenshot of Subfusc](http://cl.ly/image/0h0x0A3y0Y26/download/Image%202014-09-10%20at%2022%3A06%3A15.png)
 
 ### License:
 
