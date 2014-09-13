@@ -21,12 +21,19 @@
     }
   };
   var hideExtraNavs = function () {
+    var hidden = 0;
+
     for (var i = 0, len = navItemCnt; i < len; i++) {
       if (navItems[i].className.indexOf('active') === -1) {
+        hidden++;
         navItems[i].style.display = 'none'; 
       } else {
         navItems[i].style.display = 'block'; 
       }
+    }
+
+    if (hidden === navItemCnt) {
+      navItems[0].style.display = 'block';
     }
   };
 
