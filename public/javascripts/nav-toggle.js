@@ -4,30 +4,34 @@
   var navItemCnt = navItems.length;
   var checkToggle = function () {
     if (elToggle.offsetHeight > 0) {
-      hideExtraNav();
+      hideExtraNavs();
     } else {
-      showExtraNav();
+      showAllNavs();
     }
   };
   var toggleNav = function () {
     if (elToggle.dataset.toggle === '＋') {
       elToggle.dataset.toggle = '－';
       elToggle.innerHTML = '＋';
-      hideExtraNav();
+      hideExtraNavs();
     } else {
       elToggle.dataset.toggle = '＋';
       elToggle.innerHTML = '－';
-      showExtraNav();
+      showAllNavs();
     }
   };
-  var hideExtraNav = function () {
-    for (var i = 1, len = navItemCnt; i < len; i++) {
-      navItems[i].style.display = 'none';
+  var hideExtraNavs = function () {
+    for (var i = 0, len = navItemCnt; i < len; i++) {
+      if (navItems[i].className.indexOf('active') === -1) {
+        navItems[i].style.display = 'none'; 
+      } else {
+        navItems[i].style.display = 'block'; 
+      }
     }
   };
 
-  var showExtraNav = function () {
-    for (var i = 1, len = navItemCnt; i < len; i++) {
+  var showAllNavs = function () {
+    for (var i = 0, len = navItemCnt; i < len; i++) {
       navItems[i].style.display = 'block';
     }
   };

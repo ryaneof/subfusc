@@ -3,7 +3,11 @@
             <span class="site-nav-toggle" data-toggle="－">＋</span>
             <ul>
               {% for nav in site.navs %}
-                <li class="site-nav-item"><a href="{{ nav.href }}">{{ nav.title }}</a></li>
+                {% assign active = nil %}
+                {% if page.url == nav.href %}
+                    {% assign active = 'active' %}
+                {% endif %}
+                <li class="site-nav-item {{ active }}"><a href="{{ nav.href }}">{{ nav.title }}</a></li>
               {% endfor %}
             </ul>
         </nav>
