@@ -4,13 +4,13 @@ title: 'Archives'
 ---
 <ul id="archives-list" class="list-style-none">
 {% for post in site.posts %}
-  <li>
-    <span class="grid-80 mobile-grid-50">
-        <a href="{{ post.url }}" title="{{ post.title }}">{{ post.title }}</a>
-    </span>
-    {% if post.date %}
-    <time class="grid-20 mobile-grid-50" datetime="{{ post.date | date:"%Y-%m-%d" }}">{{ post.date | date:"%Y-%m-%d" }}</time>
-    {% endif %}
+  <li class="grid-33 mobile-grid-100">
+    <p>
+      <a href="{{ post.url }}" title="{{ post.title }}">
+        <span>{{ post.title }}</span>
+      </a>
+      <time datetime="{{ post.date | date:"%Y-%m-%d" }}">{{ post.date | date:"%Y-%m-%d" }}</time>
+    </p>
   </li>
 {% endfor %}
 </ul>
